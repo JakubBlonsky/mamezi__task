@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep z meblami</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="container" class="main_page container">
+        <div id="layout" class="row">
+            <div id="banner" class="banner">
+                <img src="img/banner_top.svg" class="banner_img" alt="Gorąca Promocja" title="Gorąca promocja">
+                <div id="timer" class="timer_wrapper">
+                    
+                    
+                    <span class="promo --end">DO KOŃCA POZOSTAŁO: </span>
+                    
+                    <div class="countdown_wrapper">
+                        <div class="time" id="timer_days">
+                        </div>
+                        <span class="timer_colon">:</span>
+                        <div class="time" id="timer_hours">
+                        </div>
+                        <span class="timer_colon">:</span>
+                        <div class="time" id="timer_minutes">
+                        </div>
+                        <span class="timer_colon">:</span>
+                        <div class="time" id="timer_seconds">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="col-12">
+                <section id="products_zone" class="product_zone">
+
+                    <h1 class="headline_wrapper">
+                        <a class="headline__name headline" href="">
+                            <img src="img/clock.svg" class="products-clock headline-img"> 
+                            <span class="headline__text">produkty na godzinę 10:00</span>
+                        </a>
+
+                        <a class="headline__after headline" href="">
+                            <img src="img/alert.svg" class="products-alert headline-img"> 
+                            <span class="headline__text">Akcja “Gorąca promocja” nie łączy się z innymi promocjami</span>
+                        </a>
+                    </h1>
+                    <div class="filters">
+                        <div class="filters_perPage">
+                            <label for="perPage">Ilość produktów:</label>
+                            <select name="perPage" id="perPage">
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="8" selected>8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="product_wrapper" id="products"></ul>    
+                    <div id="pagination" class="pagination_wrapper"></div>           
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
