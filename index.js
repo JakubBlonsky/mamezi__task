@@ -10,7 +10,7 @@ const templateBuilder = (product) => {
         <div class="product_addons">
             <div class="product__count">
                 <img class="basket_img" src="img/basket.svg">
-                <span class="item__count">Sztuk: 1</span>
+                <span class="item__count">sztuk: 1</span>
             </div>
 
             <div class="product_yousave">
