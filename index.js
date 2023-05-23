@@ -9,7 +9,7 @@ const templateBuilder = (product) => {
       <article class="product-item">
         <div class="product_addons">
             <div class="product__count">
-                <img class="img/basket.svg">
+                <img class="basket_img" src="img/basket.svg">
                 <span class="item__count">Sztuk: 1</span>
             </div>
 
@@ -85,7 +85,7 @@ const buildPagination = (pageCount) => {
     }
 }
 
-let endOfPromo = new Date('05/31/2023 11:17 PM');
+let endOfPromo = new Date('05/31/2023 11:28 PM');
 
     let _second = 1000;
     let _minute = _second * 60;

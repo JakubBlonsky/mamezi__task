@@ -99,6 +99,12 @@ body{
     justify-content: space-between;
     padding-bottom: 10px;
 }
+.product__count{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
 .product_yousave{
     padding: 5px 10px;
     outline: 1px solid var(--red);
